@@ -10,17 +10,17 @@
 <meta http-equiv="Access-Control-Allow-Origin" content="*">
 
 <title>Xie&#39;s Notebook</title>
-<link href="https://xiest.coding.me//styles/main.css" type="text/css" rel="stylesheet"/>
+<link href="https://xiest.coding.me/styles/main.css" type="text/css" rel="stylesheet"/>
 <link rel="stylesheet" href="//cdn.bootcss.com/KaTeX/0.10.2/katex.min.css"/>
 <script src="//cdn.bootcss.com/KaTeX/0.10.2/katex.min.js"></script>
 <script src="//cdn.bootcss.com/KaTeX/0.10.2/contrib/auto-render.min.js"></script>
-<script type="text/javascript" src="https://xiest.coding.me//media/scripts/jquery.js"></script>
-<script type="text/javascript" src="https://xiest.coding.me//media/scripts/jquery.pjax.min.js"></script>
-<script type="text/javascript" src="https://xiest.coding.me//media/scripts/basic.js"></script>
+<script type="text/javascript" src="https://xiest.coding.me/media/scripts/jquery.js"></script>
+<script type="text/javascript" src="https://xiest.coding.me/media/scripts/jquery.pjax.min.js"></script>
+<script type="text/javascript" src="https://xiest.coding.me/media/scripts/basic.js"></script>
 <script type="text/javascript" src="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
 <script src="//cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
 <script async type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<script async type="text/javascript" src="https://xiest.coding.me//media/scripts/search.js"></script>
+<script async type="text/javascript" src="https://xiest.coding.me/media/scripts/search.js"></script>
 <script type="text/javascript">
 $(document).pjax('a[target!=_blank]', '#pjax-container', {
 	fragment: '#pjax-container',
@@ -55,7 +55,7 @@ function pjax() {
     <div class="header">
       <div class="logo_title">
 		  
-        <div class="title animated fadeInDown"><img id="img1" style="display:inline-block;" src="https://xiest.coding.me//images/avatar.png"/>
+        <div class="title animated fadeInDown"><img id="img1" style="display:inline-block;" src="https://xiest.coding.me/images/avatar.png"/>
 <script>
 var r = 0;
     window.onload = function(){
@@ -253,7 +253,7 @@ var r = 0;
 	
 <div class="post">
   <div class="post_title weaklink">
-    <h2><a href="https://xiest.coding.me//post/hello-gridea">Hello Gridea</a>
+    <h2><a href="https://xiest.coding.me/post/hello-gridea">Hello Gridea</a>
     </h2>
   </div>
   <div class="post_content markdown"><div class="p_part"><p><p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
@@ -267,7 +267,7 @@ var r = 0;
 	
 <span class="tags_info weaklink">
 	
-	<a href="https://xiest.coding.me//tag/3LgRQfL-U" class="tag">Gridea</a>
+	<a href="https://xiest.coding.me/tag/3LgRQfL-U" class="tag">Gridea</a>
 
 
 
@@ -324,14 +324,7 @@ var r = 0;
       </div>
 
       <div class="copyright" id="copyright">
-	  <script>
-		var date=new Date;
-		var year=date.getFullYear(); 
-		document.write("Copyright © "+year+" " + "Xie&#39;s Notebook. ");
-		</script>
-		Powered by Gridea.
-		<br>
-		本站已稳定运行了
+	  本站已稳定运行了
 		<strong><script type="text/javascript">
 		var urodz= new Date("10/28/2018");
 		var now = new Date();
@@ -339,17 +332,23 @@ var r = 0;
 		var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
 		document.write(+dni)
 		</script>
-		</strong>天
+		</strong>天 | 
+		总访问量为 <strong><span id="busuanzi_value_site_uv"></span></strong> 次
 		<br>
-		本站总访问量为 <strong><span id="busuanzi_value_site_uv"></span></strong> 次
-	  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+	  <script>
+		var date=new Date;
+		var year=date.getFullYear(); 
+		document.write("Copyright © "+year+" " + "Xie&#39;s Notebook. ");
+		</script>
+	    Powered by<a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> & <a href="https://github.com/qyxtim/bitcron-pro" target="_blank">bitcron-pro</a> 
       </div>
-	  <img src="https://xiest.coding.me//media/images/font.svg">
+	  <img src="https://xiest.coding.me/media/images/font.svg">
 
     </div>
-
-<script type="text/javascript" src="https://xiest.coding.me//media/scripts/love.js"></script>
-<script type="text/javascript" src="https://xiest.coding.me//media/scripts/darkmode.js"></script>
+<!--
+<script type="text/javascript" src="https://xiest.coding.me/media/scripts/love.js"></script>
+-->
+<script type="text/javascript" src="https://xiest.coding.me/media/scripts/darkmode.js"></script>
 <script>
 var options = {
   bottom: '64px', // default: '32px'
@@ -365,8 +364,8 @@ var options = {
   autoMatchOsTheme: true // default: true
 }
 
-const darkmode = new Darkmode(options);
-darkmode.showWidget();
+// const darkmode = new Darkmode(options);
+// darkmode.showWidget();
 </script>
 <script>
 hljs.initHighlightingOnLoad();
