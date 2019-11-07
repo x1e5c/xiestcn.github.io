@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xiest.coding.me</id>
     <title>Xie&apos;s Notebook</title>
-    <updated>2019-11-07T16:28:12.511Z</updated>
+    <updated>2019-11-07T17:00:37.039Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xiest.coding.me"/>
     <link rel="self" href="https://xiest.coding.me/atom.xml"/>
@@ -16,7 +16,8 @@
         <link href="https://xiest.coding.me/post/python-biao-ge-cao-zuo-shai-xuan-ji-chong-ming-ming">
         </link>
         <updated>2019-11-07T14:12:07.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="问题">问题</h2>
+        <content type="html"><![CDATA[<p>[TOC]</p>
+<h2 id="问题">问题</h2>
 <p>有一个二维表格，给定一个<em>list</em>筛选表格的列，同时对部分列名进行重命名。</p>
 <p><strong>解决方案</strong></p>
 <ul>
@@ -64,7 +65,7 @@ renamed_columns = [names[col] if col in names else col for col in new_columns]
 <p>一行代码就能实现上述过程</p>
 <pre><code class="language-python">new_df = df[columns].rename(columns=names)
 </code></pre>
-<h2 id="总结">总结</h2>
+<h3 id="总结">总结</h3>
 <ol>
 <li>学习过程中面对不同问题，利用Python原生支持的基础去解决不失为一种绝佳的训练方式</li>
 <li>实际应用过程中，考虑到效率问题，我们往往可以利用第三方的扩展来简化我们的工作</li>
