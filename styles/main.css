@@ -118,7 +118,6 @@ a:active {
   top: 180px;
   width: 200px;
   right: 99px;
-  font-size: 12px;
 }
 @media (max-width: 1150px) {
   .toc-container {
