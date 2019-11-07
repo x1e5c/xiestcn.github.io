@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xiest.coding.me</id>
     <title>Xie&apos;s Notebook</title>
-    <updated>2019-11-07T16:14:55.358Z</updated>
+    <updated>2019-11-07T16:16:51.104Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xiest.coding.me"/>
     <link rel="self" href="https://xiest.coding.me/atom.xml"/>
@@ -23,13 +23,13 @@
 <li>Python代码直接实现</li>
 <li>调用Pandas完成</li>
 </ul>
-<h3 id="一-ptyhon代码实现">一. Ptyhon代码实现</h3>
-<h4 id="问题分析">问题分析：</h4>
+<h2 id="一-ptyhon代码实现">一. Ptyhon代码实现</h2>
+<h3 id="问题分析">问题分析：</h3>
 <ul>
 <li>列筛选：<em>list</em>中包含不同的列名，我们首先需要知道它们在原始表格中的位置，然后通过位置索引逐行从原始表格中获取</li>
 <li>重命名：以字典的形式保存重命名关系，如 '{old_name: new_name}'；然后遍历列名进个替换</li>
 </ul>
-<h4 id="核心代码">核心代码：</h4>
+<h3 id="核心代码">核心代码：</h3>
 <pre><code class="language-python"># *colums* 需要的筛选获得的列名；*names* 重命名字典；*header* 原始表格的列名
 # 列筛选
 header_index_dict = {x: y for y, x in enumerate(header)} # 字典保存每个列名的位置信息
@@ -39,7 +39,7 @@ new_line = [line[i] for i in columns_index] # 逐行遍历原始表，获取目�
 # 重命名
 renamed_columns = [names[col] if col in names else col for col in new_columns]
 </code></pre>
-<h4 id="代码封装">代码封装：</h4>
+<h3 id="代码封装">代码封装：</h3>
 <pre><code class="language-python">def filter_rename_table(table_file, columns=[], names={}):
     out = [] # 结果暂时存入列表中，返回后任你处置
     with open(table_file, 'r') as r:
@@ -55,16 +55,16 @@ renamed_columns = [names[col] if col in names else col for col in new_columns]
             out.append(new_line)
         return out
 </code></pre>
-<h4 id="代码优化">代码优化：</h4>
+<h3 id="代码优化">代码优化：</h3>
 <ol>
 <li>异常处理。可能的异常如columns并非header的真子集，我们需要及时判断以告知调用者</li>
 <li>通用性。考虑调用者只想筛选，或只想改名，或原始表没有列名的情况</li>
 </ol>
-<h3 id="二-pandas调用">二. Pandas调用</h3>
+<h2 id="二-pandas调用">二. Pandas调用</h2>
 <p>一行代码就能实现上述过程</p>
 <pre><code class="language-python">new_df = df[columns].rename(columns=names)
 </code></pre>
-<h3 id="总结">总结</h3>
+<h2 id="总结">总结</h2>
 <ol>
 <li>学习过程中面对不同问题，利用Python原生支持的基础去解决不失为一种绝佳的训练方式</li>
 <li>实际应用过程中，考虑到效率问题，我们往往可以利用第三方的扩展来简化我们的工作</li>
