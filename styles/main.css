@@ -4,7 +4,7 @@ html {
 body {
   color: rgba(0, 0, 0, 0.6);
   font-family: 'source-han-sans-simplified-c', 'PingFang SC', 'Hiragino Sans GB', 'PingHei', 'Open Sans', sans-serif, Helvetica Neue, 'Work Sans', 'Microsoft YaHei', SimSun;
-  font-size: 15px;
+  font-size: 100%;
   width: 100%;
   margin: 0 auto;
   background-color: #f7f7f7;
@@ -353,6 +353,32 @@ a:active {
 .post .post_footer {
   padding: 0 0 45px;
   border-bottom: 1px solid #f2f2f2;
+}
+.post .post-abstract {
+  font-size: 14px;
+  margin: 16px 0 8px;
+  flex: 1;
+  color: #4E616C;
+  line-height: 24px;
+  position: relative;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.post .post-abstract strong {
+  font-weight: bolder;
+}
+.post .post-abstract a {
+  font-weight: 600;
+  background: linear-gradient(180deg, transparent 70%, rgba(101, 125, 225, 0.4) 0);
+}
+.post .post-abstract code {
+  padding: 0 3px;
+  margin: 0 2px;
+  background: rgba(195, 195, 195, 0.41);
+  font-size: 0.9em;
+  border-radius: 2px;
 }
 .post .post_footer .info {
   max-width: 100%;
@@ -1045,25 +1071,13 @@ a:active {
   background: #fdfdfd;
   border-radius: 5px;
   border: 1px solid #e6e6e6;
-  margin: 27px 0 47px 0;
-  padding: 0 15px;
+  margin: 0;
+  padding: 0;
 }
 .markdown .toc ul {
-  list-style-type: armenian;
-  padding: 0;
-}
-.markdown .toc ul li {
-  list-style-type: armenian;
-  padding: 0;
-  margin: 0;
-}
-.markdown .toc ul li ul {
-  list-style-type: armenian;
-  margin-top: 0;
-  padding: 0;
+  list-style-type: none;
 }
 .markdown .toc a {
-  list-style-type: armenian;
   text-decoration: none;
   color: #3c3c3c;
 }
