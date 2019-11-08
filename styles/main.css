@@ -113,6 +113,18 @@ a:active {
 .hljs-strong {
   font-weight: bold;
 }
+.toc-container {
+  position: fixed;
+  top: 32px;
+  width: 200px;
+  right: 32px;
+  font-size: 12px;
+}
+@media (max-width: 1150px) {
+  .toc-container {
+    display: none;
+  }
+}
 .reward .reward-notice {
   font-size: 14px;
   line-height: 14px;
@@ -1028,6 +1040,32 @@ a:active {
 }
 .markdown .gist table .line-numbers {
   font-size: 12px;
+}
+.markdown .toc {
+  background: #fdfdfd;
+  border-radius: 5px;
+  border: 1px solid #e6e6e6;
+  margin: 27px 0 47px 0;
+  padding: 0 15px;
+}
+.markdown .toc ul {
+  list-style-type: armenian;
+  padding: 0;
+}
+.markdown .toc ul li {
+  list-style-type: armenian;
+  padding: 0;
+  margin: 0;
+}
+.markdown .toc ul li ul {
+  list-style-type: armenian;
+  margin-top: 0;
+  padding: 0;
+}
+.markdown .toc a {
+  list-style-type: armenian;
+  text-decoration: none;
+  color: #3c3c3c;
 }
 .markdown .with_lines pre {
   border: 0;
