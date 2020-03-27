@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https:// xiestcn.github.io</id>
-    <title>Xie&apos;s Notebook</title>
-    <updated>2020-03-27T15:30:20.103Z</updated>
+    <title>Hello Xie</title>
+    <updated>2020-03-27T15:43:01.924Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https:// xiestcn.github.io"/>
     <link rel="self" href="https:// xiestcn.github.io/atom.xml"/>
     <subtitle>Do it, once you think about it!</subtitle>
     <logo>https:// xiestcn.github.io/images/avatar.png</logo>
     <icon>https:// xiestcn.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Xie&apos;s Notebook</rights>
+    <rights>All rights reserved 2020, Hello Xie</rights>
     <entry>
         <title type="html"><![CDATA[Python表格操作- 筛选及重命名]]></title>
         <id>https:// xiestcn.github.io/post/python-biao-ge-cao-zuo-shai-xuan-ji-chong-ming-ming/</id>
