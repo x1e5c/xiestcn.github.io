@@ -263,6 +263,7 @@ a:active {
   font-weight: 600;
 }
 .header .logo_title .title .navbar .normal_nav ul {
+  float: left;
   list-style-type: none;
 }
 .header .logo_title .title .navbar .normal_nav li {
@@ -277,7 +278,7 @@ a:active {
   display: none;
   font-size: 22px;
   color: #888;
-  float: right;
+  float: left;
   cursor: pointer;
 }
 .header .logo_title .title .navbar .hamberger .fa-times {

@@ -52,136 +52,50 @@ function pjax() {
   </head>
 
   <body>
-     <div class="header">
-      <div class="logo_title">
-		  
-        <div class="title animated fadeInDown"><img id="img1" style="display:inline-block;" src="https://xiest.coding.me/images/avatar.png"/>
-<script>
-var r = 0;
-    window.onload = function(){
-        var current = 0;
-        document.getElementById('img1').onclick = function(){
-            current = (current+90)%360;
-            this.style.transform = 'rotate('+current+'deg)';
-        }
-    };
-</script>
-          <h1 title="Xie&#39;s Notebook" class="weaklink"><a  href="/">Xie&#39;s Notebook</a>
-
-          </h1>
-
-          <div class="navbar weaklink">
-            <div class="normal_nav">
-
-<div class="bitcron_nav_container">
-
-
-  <div class="bitcron_nav">
-    <div class="mixed_site_nav_wrap site_nav_wrap">
+ <div class="header">
+    <div class="lf"> 
+        <img id="img1" src="https://xiest.coding.me/images/avatar.png" width="50"/>
+	</div>
+	<div class="title lf">
+		<p title="Xie&#39;s Notebook" class="weaklink"><a  href="/">Xie&#39;s Notebook</a></p>
+	</div>
+	<div style="float: left">
+	<p class="menu">
 		
-      <ul class="mixed_site_nav site_nav sm sm-base">
-	  
- 
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current nav__item" >首页</a>
-  </li>
-  
- 
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/archives" class="selected active current nav__item" >归档</a>
-  </li>
-  
- 
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/tags" class="selected active current nav__item" >标签</a>
-  </li>
-  
- 
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/post/about" class="selected active current nav__item" >关于</a>
-  </li>
-  
- 
- <li>
-
-      </ul>
-	  
-
-      <div class="clear clear_nav_inline_end"></div>
-<div class="search">
-    <i class="search-icon fa fa-search search-start"></i>
-    <input type="text" class="search-input" placeholder="Searching..." />
-    <i class="search-icon fa fa-refresh search-clear"></i>
-	<div class="search-results"></div>
-</div>
-    </div>
-
-  </div>
-
-
-
-  <div class="clear clear_nav_end"></div>
-
-</div>
-
-            </div>
+			<a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current weaklink" >首页 </a>
 			
-			<div class="hamberger"><i class="fa fa-bars"></i>
-<i class="fa fa-times"></i>
-
-			</div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="hidden_nav animated fadeInDown">
-
-<div class="bitcron_nav_container">
-
-
-  <div class="bitcron_nav">
-    <div class="mixed_site_nav_wrap site_nav_wrap">
-      <ul class="mixed_site_nav site_nav sm sm-base">
-	
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current nav__item" >首页</a>
-
-  </li>
-
-
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/archives" class="selected active current nav__item" >归档</a>
-
-  </li>
-
-
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/tags" class="selected active current nav__item" >标签</a>
-
-  </li>
-
-
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/post/about" class="selected active current nav__item" >关于</a>
-
-  </li>
-
-
-
-
-      </ul>
-
-      <div class="clear clear_nav_inline_end"></div>
-    </div>
-
-  </div>
-
-
-
-  <div class="clear clear_nav_end"></div>
-
+			<a id="d2ef19af68cc211e98f8a0242ac110003" href="/archives" class="selected active current weaklink" >归档 </a>
+			
+			<a id="d2ef19af68cc211e98f8a0242ac110003" href="/tags" class="selected active current weaklink" >标签 </a>
+			
+			<a id="d2ef19af68cc211e98f8a0242ac110003" href="/post/about" class="selected active current weaklink" >关于 </a>
+			
+	</p>
+	</div>
+	<div class="search">
+		<i class="search-icon fa fa-search search-start"></i>
+		<input type="text" class="search-input" placeholder="Searching..." />
+		<i class="search-icon fa fa-refresh search-clear"></i>
+		<div class="search-results">
+		</div>
+	</div>
+	<div style="clear: both"></div>
 </div>
-
-      </div>
-
-    </div>
 
 <style type="text/css">
+.lf {
+	float:left;
+	font-size: 1.4em;
+    font-weight: bold
+}
+.lf p {
+	margin: 2px 1em 0 0
+}
+.menu .weaklink {
+	font-size: 1em;
+	
+	
+}
 .search {
     position: relative;
     height: 30px;
@@ -201,7 +115,7 @@ var r = 0;
 
 .search .search-input {
     float: right;
-    width: 70%;
+    width: 30%;
     height: 30px;
     line-height: 30px;
     margin: 0;
